@@ -35,7 +35,7 @@ function useConnection(receiveCallback) {
   }
 
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:8080");
+    const ws = new WebSocket("wss://funjs.onrender.com");
 
     setSocket(ws);
     ws.onopen = () => {
